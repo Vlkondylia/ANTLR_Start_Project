@@ -52,6 +52,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ASTElement.cs" />
+    <Compile Include="ASTElementConcrete.cs" />
+    <Compile Include="ASTGenerator.cs" />
     <Compile Include="first.g4.lexer.cs">
       <DependentUpon>first.g4</DependentUpon>
     </Compile>
@@ -74,11 +77,9 @@
       <Generator>MSBuild:Compile</Generator>
       <CustomToolNamespace>ANTLR_Start_Project</CustomToolNamespace>
     </Antlr4>
-    <None Include="bin\Debug\test.dot" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="bin\Debug\test.gif" />
     <Content Include="bin\Debug\test.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
